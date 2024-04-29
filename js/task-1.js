@@ -10,15 +10,17 @@
 
 
 
+  function isEnoughCapacity(products, containerSize) {
+  
+    let totalResult = 0;
 
-
-
-function isEnoughCapacity(products,containerSize) {
+    for (const product in products) {
+      
+      totalResult += products[product];
+    }
     
+    return totalResult <= containerSize;
 }
-
-
-
 
 
 console.log(
